@@ -5,7 +5,7 @@
     android:initialLayout="@layout/widget_material_battery"
     android:minWidth="40dp"
     android:minHeight="40dp"
-    android:previewImage="@drawable/example_appwidget_preview"
+    android:previewImage="@drawable/widget_preview"
     android:previewLayout="@layout/widget_material_battery"
     android:resizeMode="horizontal|vertical"
     android:targetCellWidth="1"
