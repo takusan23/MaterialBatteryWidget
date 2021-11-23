@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.takusan23.materialbatterywidget">
+
     <!-- Android 11 まで必要 -->
-    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- Android 12 から必要。RuntimePermission -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- Android 12 から必要。RuntimePermission -->
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
 
     <application
