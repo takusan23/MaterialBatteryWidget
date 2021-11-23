@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MaterialBatteryWidget</string>
+    <string name="app_widget_description">ダイナミックカラーに対応した電池残量ウィジェットです。</string>
+    <string name="disconnected">未接続です</string>
+    <string name="permission_description">ペアリング済みデバイスへアクセスする権限が必要です。ウイジェットの更新以外では利用しません。</string>
+    <string name="permission_request_button">権限を付与</string>
+    <string name="app_description">ホーム画面の空いているところを長押しすることで、ウイジェットの追加が可能です。</string>
+    <string name="license">ライセンス</string>
+    <string name="open_github">ソースコードを見る</string>
+</resources>

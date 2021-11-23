@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- バッテリーのプログレスバーの表面の色 -->
+    <color name="battery_color">@android:color/system_accent1_300</color>
+    <!-- バッテリーのプログレスバーの背面の色 -->
+    <color name="battery_background_color">@android:color/system_accent1_200</color>
+    <!-- テキストの色 -->
+    <color name="battery_text_color">@android:color/system_accent1_900</color>
+    <!-- ウイジェットの背景色 -->
+    <color name="widget_background_color">@android:color/system_accent2_100</color>
+</resources>
