@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">MaterialBatteryWidget</string>
-    <string name="app_widget_description">It is a battery level widget that supports dynamic colors.</string>
+    <string name="app_widget_description">It is a battery level widget that supports dynamic colors. ( Horizontal )</string>
     <string name="disconnected">Disconnected</string>
     <string name="permission_description">You need permission to access the paired device. It will not be used except for updating the widget.</string>
     <string name="permission_request_button">Grant authority</string>
     <string name="app_description">You can add a widget by long-pressing an empty space on the home screen.</string>
     <string name="license">License</string>
     <string name="open_github">View source code</string>
+    <string name="app_widget_description_vertical">It is a battery level widget that supports dynamic colors. ( Vertical )</string>
 </resources>

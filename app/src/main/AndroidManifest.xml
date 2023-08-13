@@ -21,7 +21,7 @@
             android:label="@string/license" />
 
         <receiver
-            android:name=".MaterialBatteryWidget"
+            android:name=".widget.MaterialBatteryWidget"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -30,6 +30,18 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/material_battery_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".widget.MaterialBatteryWidgetVertical"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/material_battery_widget_info_vertical" />
         </receiver>
 
         <receiver

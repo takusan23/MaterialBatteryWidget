@@ -7,6 +7,7 @@ import android.content.Intent
 import android.os.Handler
 import android.os.Looper
 import androidx.core.os.postDelayed
+import io.github.takusan23.materialbatterywidget.widget.CommonWidgetTool
 
 /**
  * Bluetoothペアリング済みデバイスの接続、切断ブロードキャストを取得する
@@ -20,7 +21,7 @@ class BluetoothDeviceConnectedReceiver : BroadcastReceiver() {
             val delay = if (intent?.action == BluetoothDevice.ACTION_ACL_CONNECTED) 2_000L else 0L
 
             Handler(Looper.getMainLooper()).postDelayed(delay) {
-                MaterialBatteryWidget.updateAllAppWidget(context)
+                CommonWidgetTool.updateAllWidget(context)
             }
         }
     }
