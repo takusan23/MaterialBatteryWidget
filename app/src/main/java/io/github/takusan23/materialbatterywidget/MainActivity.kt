@@ -4,11 +4,15 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
+import androidx.core.view.updatePadding
 import io.github.takusan23.materialbatterywidget.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +30,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContentView(viewBinding.root)
 
@@ -50,6 +55,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(Intent.ACTION_VIEW, GITHUB_URL.toUri()))
         }
 
+        // EdgeToEdge
+        ViewCompat.setOnApplyWindowInsetsListener(viewBinding.root) { root, insets ->
+            val systemInsets = insets.getInsets(
+                WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
+            )
+            root.updatePadding(
+                left = systemInsets.left,
+                top = systemInsets.top,
+                right = systemInsets.right,
+                bottom = systemInsets.bottom
+            )
+            insets
+        }
     }
 
     /** 権限下さいテキスト or アプリの説明 テキストをセットする */
